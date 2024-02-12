@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,500&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 100px;
+  font-family: "Poppins", sans-serif;
+}
+
+ /* This is the animation for the logo */
+
+ .logo-flip {
+  animation-name: spin;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-duration: 6s;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(-360deg);
+    }
+  }
+
+/* This is the animation for school name on the nav bar. */
+
+  .name {
+    transform: translatex(100%);
+    transform: translate(0%);
+    animation: move-in 15s ease-in-out 1;
+    transform-origin: center;
+    width:100%
+    
+  }
+
+  @keyframes move-in {
+    from {
+      transform: translatex(-100%);
+    }
+
+    to {
+      transform: translatex(5%);
+    }
+  }
+ 
+
+
+/* this is the animation for the logo on the statistics div */
+
+  .statistics-flip {
+    animation-name: spin;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(-360deg);
+    }
+  }
+
+/* This is the animation for the "Why Chose Experience Schools" Sub-heading */
+
+  .why {
+    transform: translatex(100%);
+    transform: translate(0%);
+    animation: move-in 6s ease-in-out 1;
+    transform-origin: center;
+    width:100%
+    
+  }
+
+  @keyframes move-in {
+    from {
+      transform: translatex(-100%);
+    }
+
+    to {
+      transform: translatex(0%);
+    }
+  }
+  
+
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+.nav.active {
+  /* background-color:lightblue;
+  color: darkblue;
+  font-weight: bold; */
+  border-bottom:1px solid lightblue;
+  color:lightblue
+  }
+
+.background-set {
+  background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+  .pre-school {
+    background-image:
+    linear-gradient(to bottom, rgba(39, 42, 43, 0.52), rgba(8, 8, 8, 0.52)),
+    url('../src/assets/IMAGES/kinda1.jpg');
+    
+  }
+
+  .pre-school:hover {
+    border-radius: 12px;
+  }
+
+
+  .kindergaten {
+    background-image:
+    linear-gradient(to bottom, rgba(39, 42, 43, 0.52), rgba(8, 8, 8, 0.52)),
+    url('../src/assets/IMAGES/kindergaten.jpeg');
+    
+  }
+
+  .kindergaten:hover {
+    border-radius:12px;
+  }
+
+  .nursery {
+    background-image:
+    linear-gradient(to bottom, rgba(39, 42, 43, 0.52), rgba(8, 8, 8, 0.52)),
+    url('../src/assets/IMAGES/pri.jpg');
+  }
+
+  .nursery:hover {
+    border-radius:12px;
+  }
+
+  .basic {
+    background-image:
+    linear-gradient(to bottom, rgba(39, 42, 43, 0.52), rgba(8, 8, 8, 0.52)),
+    url('../src/assets/IMAGES/primary.jpg');
+  }
+
+  .basic:hover{
+    border-radius:12px;
+  }
+
+  .secondary {
+    background-image:
+    linear-gradient(to bottom, rgba(39, 42, 43, 0.52), rgba(8, 8, 8, 0.52)),
+    url('../src/assets/IMAGES/secondary.jpg');
+  }
+
+  .secondary:hover {
+    border-radius:12px
+  }
+
+  .grad {
+    background-image:
+    linear-gradient(to bottom, rgba(39, 42, 43, 0.1), rgba(8, 8, 8, 0.1)),
+    url('../src/assets/IMAGES/grad1.jpg');
+  }
+
+  .grad:hover{
+    background-image:
+    linear-gradient(to bottom, rgba(39, 42, 43, 0.1), rgba(8, 8, 8, 0.1)),
+    url('../src/assets/IMAGES/primary.jpg');
+  }
