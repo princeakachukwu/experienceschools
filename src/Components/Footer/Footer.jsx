@@ -17,11 +17,11 @@ function Footer() {
         {/* <img src={FooterLogo } alt="School logo"  />  */}
         <p className='text-3xl md:text-lg text-justify'> <span className='text-textOrange'> Experience International School, Aba. </span> A citadel of learning committed to setting high expectations and standards for learners.  </p>
         <div className='flex gap-4'>
-          <FaFacebookF className='text-3xl md:text-2xl text-lightBlue' />
-          <BsTwitter className='text-3xl md:text-2xl text-lightBlue'  />
-          <FaWhatsapp className='text-3xl md:text-2xl text-lightBlue'  />
-          <CiYoutube className='text-3xl md:text-2xl text-lightBlue'  />
-          <BsInstagram className='text-3xl md:text-2xl text-lightBlue'  />
+          <NavLink to="https://web.facebook.com/profile.php?id=100053946435834" target='blank'> <FaFacebookF className='text-3xl md:text-2xl text-lightBlue' /></NavLink>
+          <NavLink to=""><BsTwitter className='text-3xl md:text-2xl text-lightBlue'  /></NavLink>
+          <NavLink to="https://wa.me/2348056628345" target='blank'><FaWhatsapp className='text-3xl md:text-2xl text-lightBlue'  /></NavLink>
+          <NavLink to="https://www.youtube.com/@experienceacademytv9500" target='blank'> <CiYoutube className='text-3xl md:text-2xl text-lightBlue'  /></NavLink>
+          <NavLink><BsInstagram className='text-3xl md:text-2xl text-lightBlue'  /></NavLink>
         </div>
       </div>
       <div className='mx-auto w-full md:ps-6  gap-6 box-border flex flex-col  justify-start items-center md:w-[25%]  h-[100%]'>
